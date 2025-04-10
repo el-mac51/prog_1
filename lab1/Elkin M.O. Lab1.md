@@ -45,7 +45,7 @@ int main()
 Вычислить значение выражения, введя x и y с клавиатуры. Подберите значения аргументов x и y самостоятельно за исключением тривиальных значений. Напечатайте вычисленное значение u(x, y) на экране. Включить в программу заголовочный файл math.h для доступа к математическим функциям.
 ### Математическая модель:
 
-![lab1-task1.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task1.3.png)
+![lab1-task1.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task1.3.png)
 
 ### Список идентификаторов:
 
@@ -83,22 +83,22 @@ int main()
 ```
 ### Результаты работы программы:
 
-![lab1-1.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-1.3.png)
+![lab1-1.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-1.3.png)
 
 ## Задание 1.4
 ### Постановка задачи:
 Вычислить значение выражения:
 
-![lab1-task1.4.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task1.4.png)
+![lab1-task1.4.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task1.4.png)
 
 Выполнить для следующих значений:
 
-![lab1-task1.4.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task1.4.2.png)
+![lab1-task1.4.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task1.4.2.png)
 
 Значения параметров и аргументов можно вводить прямо в коде программы без ввода с клавиатуры.
 ### Математическая модель:
 
-![lab1-task1.4.1.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task1.4.1.png)
+![lab1-task1.4.1.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task1.4.1.png)
 
 ### Список идентификаторов:
 | Имя переменной | Тип данных | Описание                  |
@@ -141,9 +141,9 @@ int main()
 ```
 ### Результаты работы программы: 
 
-![lab1-1.4.1.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-1.4.1.png)
-![lab1-1.4.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-1.4.2.png)
-![lab1-1.4.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-1.4.3.png)
+![lab1-1.4.1.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-1.4.1.png)
+![lab1-1.4.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-1.4.2.png)
+![lab1-1.4.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-1.4.3.png)
 
 # Комплект 2. Организация циклов. Условные конструкции.
 
@@ -152,7 +152,7 @@ int main()
 Вычислить используя цикл for координаты планеты Марс относительно Земли с течением времени t. Распечатать на экране координаты для каждой итерации по t. Координаты планеты Марс для каждой итерации задаются заданы формулами. Где r1 – радиус орбиты Марса, r2 – радиус орбиты Земли, T1 и T2 — периоды обращения указанных планет соответственно, t – каждый заданный момент времени внутри цикла по времени. Подберите подходящие единицы измерения для времени и расстояния.
 ### Математическая модель:
 
-![lab1-task2.1.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task2.1.png)
+![lab1-task2.1.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task2.1.png)
 
 ### Список идентификаторов:
 
@@ -199,8 +199,8 @@ int main()
 ```
 ### Результаты работы программы:
 
-![lab1-2.1.1.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-2.1.1.png)
-![lab1-2.1.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-2.1.2.png)
+![lab1-2.1.1.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-2.1.1.png)
+![lab1-2.1.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-2.1.2.png)
 
 ## Задание 2.2
 ### Постановка задачи:
@@ -208,7 +208,7 @@ int main()
 Функция f(x) может быть выбрана и самостоятельно. Результат интегрирования сравнить с вычисленным вручную и убедиться в корректности результата.
 ### Математическая модель:
 
-![lab1-task2.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task2.2.png)
+![lab1-task2.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task2.2.png)
 
 ### Список идентификаторов:
 | Имя переменной | Тип данных | Описание                        |
@@ -249,14 +249,14 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-2.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-2.2.png)
+![lab1-2.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-2.2.png)
 ## Задание 2.3
 
 ### Постановка задачи
 Организовать и распечатать последовательность чисел Падована, не превосходящих число m, введенное с клавиатуры. Числа Падована представлены следующим рядом: 1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12, 16, 21, 28, 37, 49, 65, 86, 114, 151, 200, 265... Использовать конструкцию for и простые варианты условной конструкции if else. Для этих чисел заданы формулы.
 ### Математическая модель
 
-![lab1-task2.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task2.3.png)
+![lab1-task2.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task2.3.png)
 
 ### Список идентификаторов
 
@@ -293,7 +293,7 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-2.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-2.3.png)
+![lab1-2.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-2.3.png)
 
 ## Задание 2.4
 
@@ -338,7 +338,7 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-2.4.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-2.4.png)
+![lab1-2.4.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-2.4.png)
 
 # Комплект 3. Основы работы со статическими массивами.
 
@@ -383,7 +383,7 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-3.1.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-3.1.png)
+![lab1-3.1.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-3.1.png)
 
 ## Задание 3.2
 
@@ -422,14 +422,14 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-3.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-3.2.png)
+![lab1-3.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-3.2.png)
 
 ## Задание 3.3
 
 ### Постановка задачи:
 Транспонировать матрицу:
 
-![lab1-task3.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-task3.3.png)
+![lab1-task3.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-task3.3.png)
 
 ### Список идентификаторов
 
@@ -464,7 +464,7 @@ int main()
 ```
 ### Результаты работы программы
 
-![lab1-3.3.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-3.3.png)
+![lab1-3.3.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-3.3.png)
 
 ## Задание 3.4
 
@@ -509,7 +509,7 @@ int main()
 
 ### Результаты работы программы
 
-![lab1-3.4.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-3.4.png)
+![lab1-3.4.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-3.4.png)
 
 ## Задание 3.5
 
@@ -560,7 +560,7 @@ int main()
 
 ### Результаты работы программы
 
-![lab1-3.5.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-3.5.png)
+![lab1-3.5.png](https://github.com/el-mac51/prog_1/blob/main/lab1/lab1-3.5.png)
 ***
 # Информация о студенте
 Елькин Михаил, 1 курс, группа ИВТ-1.2
