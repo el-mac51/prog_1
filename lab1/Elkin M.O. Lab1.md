@@ -38,7 +38,6 @@ int main()
 ```
 ### Результаты работы программы:
 
-![lab1-1.2.png](https://github.com/el-mac51/prog_1/blob/lab1/lab1-1.2.png)
 ![lab1-1.2.png](https://github.com/el-mac51/prog_1/blob/main/lab1-1.2.png)
 
 ## Задание 1.3
