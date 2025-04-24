@@ -40,6 +40,26 @@ int main() {
     free(pointer);
 }
 ```
+### Второй способ решения:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    double ***pointer = NULL;
+
+    *( *( *( pointer = (double ***) malloc(sizeof(double **))) = (double **)malloc(sizeof(double *)) ) = (double *)malloc(sizeof(double)) ) = 2.0;
+
+    printf("%lf\n", ***pointer);
+    free(**pointer);
+    free(*pointer);
+    free(pointer);
+    return 0;
+}
+```
+
 ### Результаты работы программы:
 
 ![lab2.1.2.png](lab2.1.2.png)
