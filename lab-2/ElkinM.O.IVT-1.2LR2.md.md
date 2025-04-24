@@ -26,16 +26,16 @@
 #include <stdlib.h> 
 int main() {
 
-    double ***pointer = NULL;
+    double ***pointer = NULL; //тройной указатель на тип double
 
-    pointer = malloc(sizeof(double**));
+    pointer = malloc(sizeof(double**)); // постепенно выделяется память под каждый уровень
     *pointer = malloc(sizeof(double*)); 
     **pointer = malloc(sizeof(double)); 
     ***pointer = 2.0; 
 
     printf("%.2lf", ***pointer); 
     
-    free(**pointer); 
+    free(**pointer); //память освобождается в обратном порядке
     free(*pointer); 
     free(pointer);
 }
@@ -65,12 +65,12 @@ $$sum = *pr1(num1) + *pr2(num2)$$
 
 int main() {
     double num1, num2, sum;
-    double *pr1 = &num1, *pr2 = &num2;
+    double *pr1 = &num1, *pr2 = &num2; //создается два указателя на переменные
     printf("Введите первое число: ");
-    scanf("%lf", pr1);
+    scanf("%lf", pr1); //вводятся число прямо по адресам
     printf("Введите второе число: ");
     scanf("%lf", pr2);
-    sum = *pr1 + *pr2;
+    sum = *pr1 + *pr2; // значения складываются через адресацию
     printf("Сумма чисел: %.2lf\n", sum);
     return 0;
 }
@@ -96,12 +96,13 @@ int main() {
 
 int main() {
     double num1, num2;
-    double *pr1 = &num1, *pr2 = &num2;
+    double *pr1 = &num1, *pr2 = &num2; 
     printf("Введите первое число: ");
-    scanf("%lf", pr1);
+    scanf("%lf", pr1); //числа вводятся прямо по адресам
     printf("Введите второе число: ");
     scanf("%lf", pr2);
-    if (*pr1 > *pr2) {
+    if (*pr1 > *pr2) //значения сравниваются через разыменование
+    {
         printf("Максимальное число: %.2lf\n", *pr1);
     } else {
         printf("Максимальное число: %.2lf\n", *pr2);
@@ -134,10 +135,10 @@ int main() {
     double *arr;
     printf("Введите размер массива: ");
     scanf("%d", &n);
-    arr = (double *)malloc(n * sizeof(double));
+    arr = (double *)malloc(n * sizeof(double)); //выделяет память под массив через malloc
     if (arr == NULL)
     {
-        printf("Ошибка выделения памяти!\n");
+        printf("Ошибка выделения памяти!\n"); //проверка успешности выделения
         return 1;
     }
     printf("Введите элементы массива:\n");
@@ -145,13 +146,13 @@ int main() {
     {
         scanf("%lf", arr + i);
     }
-    printf("Элементы массива:\n");
+    printf("Элементы массива:\n"); //выводит элементы массива через указатель arr
     for (int i = 0; i < n; i++)
     {
         printf("%.2lf ", *(arr + i));
     }
     printf("\n");
-    free(arr);
+    free(arr); //освобождает память
     return 0;
 }
 ```
@@ -180,7 +181,7 @@ int main() {
     int *arr;
     printf("Введите размер массива: ");
     scanf("%d", &n);
-    arr = (int *)malloc(n * sizeof(int));
+    arr = (int *)malloc(n * sizeof(int)); //выделяется память под массив через malloc
     if (arr == NULL)
     {
         printf("Ошибка выделения памяти!\n");
@@ -192,11 +193,11 @@ int main() {
         scanf("%d", &arr[i]);
     }
     printf("Элементы массива в обратном порядке:\n");
-    int *pr = arr + n - 1;
+    int *pr = arr + n - 1; //указатель pr ставится на конец массива
     for (int i = 0; i < n; i++)
     {
         printf("%d ", *pr);
-        pr--;
+        pr--; //указатель двигается в назад выводя элементы
     }
     printf("\n");
     free(arr);
@@ -221,11 +222,11 @@ int main() {
 
 int main() {
     int a = 1234567890;
-    unsigned char * bpr = (unsigned char *)&a;
+    unsigned char * bpr = (unsigned char *)&a; //указатель bpr на число а
     printf("Побайтовый вывод переменной a (%d):\n", a);
     for (int i = 0; i < sizeof(a); i++) 
     {
-        printf("%p Байт %d: %d\n", bpr + i, i, *(bpr + i));
+        printf("%p Байт %d: %d\n", bpr + i, i, *(bpr + i)); //выводятся адрес, номер байта, значение
     }
 }
 ```
@@ -250,12 +251,12 @@ int main() {
 
 int main() {
     int rows, cols;
-    int **array;
+    int **array; 
     printf("Введите количество строк: ");
     scanf("%d", &rows);
     printf("Введите количество столбцов: ");
     scanf("%d", &cols);
-    array = (int **)malloc(rows * sizeof(int *));
+    array = (int **)malloc(rows * sizeof(int *)); //выделяется массив указателей на строки
     if (array == NULL) 
     {
         printf("\nОшибка выделения памяти\n");
@@ -263,7 +264,7 @@ int main() {
     }
 
     for (int i = 0; i < rows; i++) {
-        array[i] = (int *)malloc(cols * sizeof(int));
+        array[i] = (int *)malloc(cols * sizeof(int)); //выделяется массив для столбцов
         if (array[i] == NULL) 
         {
             printf("Ошибка выделения памяти\n");    
@@ -275,14 +276,14 @@ int main() {
             return 1;
         }
     }
-    for (int i = 0; i < rows; i++) 
+    for (int i = 0; i < rows; i++) //массив заполняется
     {
-        for (int j = 0; j < cols; j++) 
+        for (int j = 0; j < cols; j++) //здесь тоже
         {
             array[i][j] = i * cols + j;
         }
     }
-    printf("Двумерный массив:\n");
+    printf("Двумерный массив:\n"); 
     for (int i = 0; i < rows; i++) 
     {
         for (int j = 0; j < cols; j++) 
@@ -293,9 +294,9 @@ int main() {
     }
     for (int i = 0; i < rows; i++) 
     {
-        free(array[i]);
+        free(array[i]); //освобождаются все строки
     }
-    free(array);
+    free(array); //освобождается массив указателей
     return 0;
 }
 ```
