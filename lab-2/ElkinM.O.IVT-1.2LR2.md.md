@@ -28,12 +28,12 @@ int main() {
 
     double ***pointer = NULL; //тройной указатель на тип double
 
-    pointer = malloc(sizeof(double**)); // постепенно выделяется память под каждый уровень
+    pointer = malloc(sizeof(double**)); // постепенно выделяется память под каждый уровень указателя
     *pointer = malloc(sizeof(double*)); 
     **pointer = malloc(sizeof(double)); 
-    ***pointer = 2.0; 
+    ***pointer = 2.0; //приваевается значение 2.0
 
-    printf("%.2lf", ***pointer); 
+    printf("%.2lf", ***pointer); //Выводится значение через тройное разыменование
     
     free(**pointer); //память освобождается в обратном порядке
     free(*pointer); 
@@ -50,10 +50,10 @@ int main(void)
 {
     double ***pointer = NULL;
 
-    *( *( *( pointer = (double ***) malloc(sizeof(double **))) = (double **)malloc(sizeof(double *)) ) = (double *)malloc(sizeof(double)) ) = 2.0;
+    *( *( *( pointer = (double ***) malloc(sizeof(double **))) = (double **)malloc(sizeof(double *)) ) = (double *)malloc(sizeof(double)) ) = 2.0; //Выделение памяти под каждый уровень указателя
 
-    printf("%lf\n", ***pointer);
-    free(**pointer);
+    printf("%lf\n", ***pointer); //Выводится значение через тройное разыменование
+    free(**pointer); //память освобождается в обратном порядке
     free(*pointer);
     free(pointer);
     return 0;
